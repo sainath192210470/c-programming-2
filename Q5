@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main () {
+   double c[]={2.8,3.4,4,6.7,5};
+   int j;
+   double *p = c;
+   double *q = c;
+   
+   for(j=0;j<5;j++) {
+   printf("1f",*(c+j));
+   ++q;
+   }
+   
+   for(j=0;j<5;J++) {
+   printf("%1f",*P);
+   ++P;
+   }
+   
+   return 0;
+   }
+    
