@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+
+int main() {
+    char ('a')= APPLE;
+    
+    printf(Enter number of vowels and consonants in APPLE);
+    scanf("%d,&n");
+    
+    uppercase_vowel = ('c==A';'c==E');
+    uppercase_consonant = ('c==P';'c==P';'c==L');
+}
+
+    else {
+      fgets(APPLE;sizeof(APPLE);stdin);
+      
+      puts(APPLE);
+      
+      return 0;
+      
+}
