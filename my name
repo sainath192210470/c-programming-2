@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    
+    printf("Mahendra\n");
+    printf("siva kumar\n");
+    printf("mani");
+
+    return 0;
+}
