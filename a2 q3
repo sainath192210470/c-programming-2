@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char names[5][20];
+    char temp[20];
+    char order;
+    int i, j, n=5;
+
+    // get input names from user
+    printf("Enter %d names:\n", n);
+    for(i=0; i<n; i++) {
+        scanf("%s", names[i]);
+    }
+
+    // get sort order from user
+    printf("Enter sort order (A/D): ");
+    scanf(" %c", &order);
+
+    // sort the names
+    for(i=0; i<n; i++) {
+        for(j=i+1; j<n; j++) {
+            if(order == 'A' && strcmp(names[i], names[j]) > 0) {
+                strcpy(temp, names[i]);
+                strcpy(names[i], names[j]);
+                strcpy(names[j], temp);
+            }
+            else if(order == 'D' && strcmp(names[i], names[j]) < 0) {
+                strcpy(temp, names[i]);
+                strcpy(names[i], names[j]);
+                strcpy(names[j], temp);
+            }
+        }
+    }
+
+    // print the sorted names
+    printf("Sorted names:\n");
+    for(i=0; i<n; i++) {
+        printf("%s\n", names[i]);
+    }
+
+    return 0;
+}
+
